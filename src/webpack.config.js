@@ -5,7 +5,7 @@ module.exports = {
   // モードの設定、v4系以降はmodeを指定しないと、webpack実行時に警告が出る
   mode: 'development',
   // エントリーポイントの設定
-  entry: './wrapper.mjs',
+  entry: './index.js',
   // 出力の設定
   output: {
     // 出力するファイル名
@@ -13,4 +13,12 @@ module.exports = {
     // 出力先のパス（絶対パスを指定する必要がある）
     path: path.join(__dirname, 'public/js'),
   },
+  // webpack.config.jsの設定例
+  resolve: {
+    fallback: {
+      "crypto": require.resolve("crypto-browserify"),
+      "buffer": require.resolve("buffer")
+    }
+  }
+
 };
