@@ -76,7 +76,9 @@
     "prettier": "2.7.1",
     "random-seed": "0.3.0",
     "runmd": "1.3.9",
-    "standard-version": "9.5.0"
+    "standard-version": "9.5.0",
+    "webpack": "5.90.1",
+    "webpack-cli": "5.1.4"
   },
   "optionalDevDependencies": {
     "@wdio/browserstack-service": "7.16.10",
