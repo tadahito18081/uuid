@@ -2,3 +2,4 @@
 .local/
 dist/
 node_modules/
+public/js/
